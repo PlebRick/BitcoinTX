@@ -29,6 +29,7 @@ fastify.setErrorHandler((error, request, reply) => {
 // Start Server
 const start = async () => {
     try {
+        // Listen on the specified port
         await fastify.listen({ port: Number(PORT) });
         console.log(`Server is running on http://localhost:${PORT}`);
     }

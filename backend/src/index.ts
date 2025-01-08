@@ -15,6 +15,7 @@ const PORT = process.env.PORT || 3001;
 // Register Routes
 // Transactions API (handles Bitcoin transactions)
 fastify.register(transactionsRoutes);
+
 // Price API (fetches real-time Bitcoin price)
 fastify.register(priceRoutes);
 
@@ -37,6 +38,7 @@ fastify.setErrorHandler((error, request, reply) => {
 // Start Server
 const start = async () => {
   try {
+    // Listen on the specified port
     await fastify.listen({ port: Number(PORT) });
     console.log(`Server is running on http://localhost:${PORT}`);
   } catch (err) {
