@@ -1,0 +1,27 @@
+{
+  "name": "bitcointx-backend",
+  "version": "1.0.0",
+  "description": "The backend server for the BitcoinTX project, powered by Fastify and TypeScript with ESM support.",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "nodemon --watch src --exec node --loader ts-node/esm src/index.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=16.17.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

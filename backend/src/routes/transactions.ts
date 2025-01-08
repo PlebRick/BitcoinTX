@@ -1,0 +1,14 @@
+import { FastifyInstance } from 'fastify';
+
+export default async function transactionsRoutes(fastify: FastifyInstance) {
+  // GET /api/transactions - Fetch all transactions
+  fastify.get('/api/transactions', async (request, reply) => {
+    return { transactions: [] }; // Placeholder for transactions
+  });
+
+  // POST /api/transactions - Create a new transaction
+  fastify.post('/api/transactions', async (request, reply) => {
+    const { amount, type } = request.body as { amount: number; type: string };
+    return { message: 'Transaction created!', transaction: { amount, type } };
+  });
+}
