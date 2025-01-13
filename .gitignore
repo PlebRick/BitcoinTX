@@ -1,0 +1,78 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+logs/*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+.DS_Store
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Build files
+dist/
+build/
+out/
+
+# Editor/IDE Configs
+.vscode/
+.idea/
+*.swp
+
+# Docker
+docker-compose.override.yml
+docker/data/
+docker/.env
+
+# Operating System Files
+Thumbs.db
+*.DS_Store
+
+# Frontend Specific
+frontend/node_modules/
+frontend/dist/
+frontend/public/
+
+# Backend Specific
+backend/node_modules/
+backend/dist/
+backend/database/*.db
+backend/database/*.sqlite
+
+# Coverage files
+coverage/
+.nyc_output/
+
+# Test-related files
+jest-*.json
+*.test.js.map
+.vitest/
+
+# Miscellaneous
+*.log
+*.bak
+*.tmp
+*.lock
+
+# Debugger and Profiling
+*.prof
+*.profile
+
+# Linting
+.eslintcache
+.prettiercache
