@@ -1,10 +1,16 @@
 import Fastify from 'fastify';
+import cors from '@fastify/cors'; // Use the updated CORS plugin
 import { Sequelize } from 'sequelize';
 import transactionRoutes from './routes/transactions';
 import { initTransactionModel } from './models/TransactionModel';
 
 // Initialize Fastify server
 const server = Fastify();
+
+// Register CORS
+server.register(cors, {
+  origin: 'http://localhost:5173', // Allow requests from the frontend
+});
 
 // Initialize Sequelize
 const sequelize = new Sequelize({
