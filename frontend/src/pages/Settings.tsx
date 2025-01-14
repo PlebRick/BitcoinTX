@@ -1,7 +1,9 @@
-import React from 'react';
-
-const Settings: React.FC = () => {
-  return <h1 className="text-xl font-bold">Settings Page</h1>;
+const Settings = () => {
+  return (
+    <div className="bg-[#131313] p-6 rounded-lg shadow border border-gray-600">
+      <p className="text-[#f9f9f9]">This is the Settings placeholder content.</p>
+    </div>
+  );
 };
 
-export default Settings; // Ensure a default export
+export default Settings;

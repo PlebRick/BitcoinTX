@@ -1,19 +1,28 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
 
-  const titles: { [key: string]: string } = {
-    '/': 'Dashboard',
-    '/wallets': 'Wallets & Exchanges',
-    '/transactions': 'Transactions',
-    '/reports': 'Reports',
-    '/settings': 'Settings',
+  const getPageTitle = () => {
+    switch (location.pathname) {
+      case "/":
+        return "Dashboard";
+      case "/wallets":
+        return "Wallets & Exchanges";
+      case "/transactions":
+        return "Transactions";
+      case "/reports":
+        return "Reports";
+      case "/settings":
+        return "Settings";
+      default:
+        return "";
+    }
   };
 
   return (
-    <header className="bg-gray-850 fixed top-0 left-64 w-[calc(100%-16rem)] h-16 flex items-center px-6 border-b border-gray-700">
-      <h2 className="text-xl font-semibold text-white">{titles[location.pathname] || 'Page'}</h2>
+    <header className="bg-[#0a0a0a] text-[#9a9a9a] p-6 shadow border-b border-gray-700">
+      <h1 className="text-lg font-medium">{getPageTitle()}</h1>
     </header>
   );
 };

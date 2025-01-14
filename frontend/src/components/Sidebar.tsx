@@ -1,68 +1,78 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <aside className="bg-gray-900 fixed top-0 left-0 w-64 h-full flex flex-col py-6 px-4">
-      {/* Logo Section */}
-      <div className="flex flex-col items-center mb-8">
-        <div className="bg-gray-700 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-          <span className="text-yellow-400 text-3xl font-bold">B</span>
-        </div>
-        <h1 className="text-2xl font-bold text-white">BitcoinTX</h1>
+    <aside className="w-64 bg-[#1d1d1d] text-white flex flex-col">
+      {/* Branding Section */}
+      <div className="p-6 flex items-center border-b border-gray-700">
+        <div className="h-10 w-10 bg-gray-700 rounded-full mr-3"></div> {/* Logo placeholder */}
+        <h1 className="text-2xl font-bold text-[#f9f9f9]">BitcoinTX</h1>
       </div>
 
       {/* Navigation Links */}
-      <nav className="flex flex-col gap-4">
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            `block px-3 py-2 rounded-lg ${
-              isActive ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-700'
-            }`
-          }
-        >
-          Dashboard
-        </NavLink>
-        <NavLink
-          to="/wallets"
-          className={({ isActive }) =>
-            `block px-3 py-2 rounded-lg ${
-              isActive ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-700'
-            }`
-          }
-        >
-          Wallets & Exchanges
-        </NavLink>
-        <NavLink
-          to="/transactions"
-          className={({ isActive }) =>
-            `block px-3 py-2 rounded-lg ${
-              isActive ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-700'
-            }`
-          }
-        >
-          Transactions
-        </NavLink>
-        <NavLink
-          to="/reports"
-          className={({ isActive }) =>
-            `block px-3 py-2 rounded-lg ${
-              isActive ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-700'
-            }`
-          }
-        >
-          Reports
-        </NavLink>
-        <NavLink
-          to="/settings"
-          className={({ isActive }) =>
-            `block px-3 py-2 rounded-lg ${
-              isActive ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-700'
-            }`
-          }
-        >
-          Settings
-        </NavLink>
+      <nav className="mt-4 flex-1">
+        <ul>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `block px-6 py-3 rounded-md hover:bg-[#131313] ${
+                  isActive ? "bg-[#131313] font-semibold" : ""
+                } text-[#9a9a9a]`
+              }
+            >
+              Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/wallets"
+              className={({ isActive }) =>
+                `block px-6 py-3 rounded-md hover:bg-[#131313] ${
+                  isActive ? "bg-[#131313] font-semibold" : ""
+                } text-[#9a9a9a]`
+              }
+            >
+              Wallets & Exchanges
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/transactions"
+              className={({ isActive }) =>
+                `block px-6 py-3 rounded-md hover:bg-[#131313] ${
+                  isActive ? "bg-[#131313] font-semibold" : ""
+                } text-[#9a9a9a]`
+              }
+            >
+              Transactions
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/reports"
+              className={({ isActive }) =>
+                `block px-6 py-3 rounded-md hover:bg-[#131313] ${
+                  isActive ? "bg-[#131313] font-semibold" : ""
+                } text-[#9a9a9a]`
+              }
+            >
+              Reports
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/settings"
+              className={({ isActive }) =>
+                `block px-6 py-3 rounded-md hover:bg-[#131313] ${
+                  isActive ? "bg-[#131313] font-semibold" : ""
+                } text-[#9a9a9a]`
+              }
+            >
+              Settings
+            </NavLink>
+          </li>
+        </ul>
       </nav>
     </aside>
   );

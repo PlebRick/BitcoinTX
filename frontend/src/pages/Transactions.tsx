@@ -1,8 +1,9 @@
-// src/pages/Transactions.tsx
-import React from 'react';
-
-const Transactions: React.FC = () => {
-  return <h1 className="text-xl font-bold">Transactions Page</h1>;
+const Transactions = () => {
+  return (
+    <div className="bg-[#131313] p-6 rounded-lg shadow border border-gray-600">
+      <p className="text-[#f9f9f9]">This is the Transactions placeholder content.</p>
+    </div>
+  );
 };
 
 export default Transactions;
