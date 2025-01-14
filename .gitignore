@@ -76,3 +76,5 @@ jest-*.json
 # Linting
 .eslintcache
 .prettiercache
+
+*.zip
