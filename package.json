@@ -5,11 +5,12 @@
   "scripts": {
     "install": "npm install --prefix backend && npm install --prefix frontend",
     "dev:backend": "npm run dev --prefix backend",
-    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:frontend": "vite",
     "dev": "npm run dev:backend & npm run dev:frontend",
     "build:backend": "npm run build --prefix backend",
-    "build:frontend": "npm run build --prefix frontend",
-    "build": "npm run build:backend && npm run build:frontend"
+    "build:frontend": "vite build", 
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:css": "postcss frontend/src/index.css -o dist/styles.css"
   },
   "dependencies": {
     "sequelize": "^6.37.5",
@@ -17,8 +18,14 @@
   },
   "devDependencies": {
     "@types/sequelize": "^4.28.20",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.0",
-    "tailwindcss": "^3.4.17"
+    "eslint": "^9.18.0",
+    "postcss": "^8.5.1",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.17",
+    "vite": "^4.0.0",
+    "@vitejs/plugin-react": "^3.1.0"
   }
 }

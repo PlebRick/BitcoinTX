@@ -1,36 +1,8 @@
-/* index.css - TailwindCSS Setup */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Force dark mode globally */
-:root {
-  color-scheme: dark; /* Forces the app to use dark mode */
-}
 
-/* Tailwind Customizations */
-
-/* Custom color for header */
-.bg-gray-850 {
-  background-color: #1e293b; /* Slightly darker gray for header */
-}
-
-/* Button Styles */
-.btn-rounded {
-  @apply bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600;
-}
-
-/* Highlighted Text */
-.text-highlight {
-  @apply text-green-500 font-semibold; /* Use Tailwind utilities */
-}
-
-/* Content Box Styling */
-.content-box {
-  @apply shadow-lg bg-gray-700 text-gray-300 p-6 rounded-lg;
-}
-
-/* Ensure body styles match Tailwind's defaults */
-body {
-  @apply bg-gray-800 text-gray-100 font-sans; /* Matches Tailwind's dark mode theme */
+.bg-blue-500 {
+  background-color: rgb(59 130 246);
 }
