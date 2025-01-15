@@ -1,11 +1,17 @@
 import { NavLink } from "react-router-dom";
+import logo from "../assets/logo.svg";
 
 const Sidebar = () => {
   return (
     <aside className="w-64 bg-[#1d1d1d] text-white flex flex-col">
       {/* Branding Section */}
       <div className="p-6 flex items-center border-b border-gray-700">
-        <div className="h-10 w-10 bg-gray-700 rounded-full mr-3"></div> {/* Logo placeholder */}
+        {/* Logo with Round Style */}
+        <img
+          src={logo}
+          alt="BitcoinTX Logo"
+          className="h-10 w-10 rounded-full mr-3"
+        />
         <h1 className="text-2xl font-bold text-[#f9f9f9]">BitcoinTX</h1>
       </div>
 
