@@ -1,0 +1,51 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+*.local
+
+# SQLite database files
+database/*.db
+database/*.sqlite
+
+# Editor/IDE files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Test-related files
+coverage/
+.nyc_output/
+.vitest/
+
+# Linting
+.eslintcache
+.prettiercache
+
+# Temporary files
+*.tmp
+*.bak
+
+# Docker-related files
+docker-compose.override.yml
+docker/data/
+
+# Miscellaneous
+Thumbs.db
+*.pid
+*.seed
+*.pid.lock
+
+# Optional: ZIP files (if you make backups or exports)
+*.zip

@@ -1,5 +1,5 @@
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +7,37 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency directories
+node_modules/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Build output
+dist/
+dist-ssr/
+
+# Temporary files
+*.local
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Editor/IDE directories and files
+.vscode/
+!.vscode/extensions.json # Keep project-specific VS Code settings
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+
+# Test-related files
+coverage/
+.vitest/
+
+# Linting
+.eslintcache
+.prettiercache
+
+# Optional: ZIP files (for backups or exports)
+*.zip
