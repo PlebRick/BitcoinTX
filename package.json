@@ -14,7 +14,10 @@
   },
   "dependencies": {
     "sequelize": "^6.37.5",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.1.7",
+    "axios": "^1.5.0",
+    "chart.js": "^4.4.0",
+    "react-chartjs-2": "^5.3.0"
   },
   "devDependencies": {
     "@types/sequelize": "^4.28.20",
